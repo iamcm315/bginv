@@ -1,3 +1,22 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+blockquote[data-callout-metadata="bginfo"] .callout-title, blockquote[data-callout-metadata="store"] .callout-title {
+    display: none;
+}
+
+blockquote[data-callout-metadata="bginfo"] blockquote {
+    float: right;
+}
+
+blockquote[data-callout-metadata="bginfo"] .table-container {
+    float: left;
+}
+
+blockquote[data-callout-metadata="bginfo"] tbody tr:last-child td, blockquote[data-callout-metadata="store"] tbody tr:last-child td {
+    visibility: hidden;
+    border: 0;
+    height: 0;
+    padding: 0;
+}
